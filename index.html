@@ -328,18 +328,29 @@
         border-radius: 12px;
         margin-top: 8px;
       }
-
       /* HERO */
       #hero {
         background: var(--ink);
         min-height: 100svh;
         padding-top: 64px;
+        position: relative;
       }
       .hero-inner {
         display: flex;
         flex-direction: column;
         width: 100%;
         min-height: calc(100svh - 64px);
+      }
+      #hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+      }
+      #hero * {
+        position: relative;
+        z-index: 2;
       }
       .hero-content-wrap {
         width: 100%;
