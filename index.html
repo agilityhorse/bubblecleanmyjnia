@@ -191,29 +191,6 @@
       }
     </script>
     <style>
-      .extras-title,
-      .footer-nav-title,
-      .hero-badge span,
-      .pkg-subcat,
-      h1 {
-        text-transform: uppercase;
-      }
-      .btn-outline-w,
-      .floating-cta a,
-      .footer-nav-links a,
-      .mobile-menu a,
-      .nap-box a,
-      .nav-links a,
-      .nav-logo {
-        text-decoration: none;
-      }
-      .btn-primary,
-      .btn-secondary,
-      .floating-cta a,
-      .toggle-btn,
-      body {
-        font-family: Outfit, sans-serif;
-      }
       .nav-logo,
       h1 {
         font-weight: 900;
@@ -222,6 +199,15 @@
       .nav-links a:hover,
       .nav-logo {
         color: #fff;
+      }
+      .mobile-menu a,
+      .nav-links a,
+      .nav-logo {
+        text-decoration: none;
+      }
+      .hero-badge span,
+      h1 {
+        text-transform: uppercase;
       }
       .btn-primary,
       .faq-q,
@@ -239,6 +225,7 @@
       .service-card {
         overflow: hidden;
       }
+      *,
       ::after,
       ::before {
         box-sizing: border-box;
@@ -249,6 +236,7 @@
         scroll-behavior: smooth;
       }
       body {
+        font-family: Outfit, sans-serif;
         background: #fff;
         color: #0a0a0a;
         overflow-x: hidden;
@@ -352,20 +340,11 @@
         justify-content: center;
         gap: 28px;
       }
-      #hero *,
-      .ba-label {
-        z-index: 2;
-      }
       .hero-inner,
       .mobile-menu.open {
         display: flex;
       }
-      #hero,
-      #hero *,
       .about-photo,
-      .ba-btn,
-      .ba-divider,
-      .contact-map,
       .hero-media,
       section {
         position: relative;
@@ -390,13 +369,6 @@
         flex-direction: column;
         width: 100%;
         min-height: calc(100svh - 64px);
-      }
-      #hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.45);
-        z-index: 1;
       }
       .hero-content-wrap {
         width: 100%;
@@ -466,6 +438,7 @@
         gap: 8px;
         font-size: 13px;
         text-decoration: none;
+        font-family: Outfit, sans-serif;
       }
       .btn-primary {
         align-items: center;
@@ -504,10 +477,7 @@
         border-radius: 16px;
       }
       .about-grid,
-      .footer-top,
-      .gallery-grid,
       .packages-grid,
-      .reviews-grid,
       .services-grid {
         grid-template-columns: 1fr;
       }
@@ -693,6 +663,7 @@
       .toggle-btn {
         padding: 10px 22px;
         border-radius: 10px;
+        font-family: Outfit, sans-serif;
         font-size: 13px;
         font-weight: 700;
         border: none;
@@ -745,6 +716,7 @@
       .extras-title,
       .pkg-subcat {
         letter-spacing: 0.08em;
+        text-transform: uppercase;
       }
       .pkg-price {
         font-size: 26px;
@@ -853,6 +825,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+      }
+      .footer-top,
+      .gallery-grid,
+      .reviews-grid {
+        grid-template-columns: 1fr;
       }
       .about-card {
         background: var(--grey);
@@ -977,6 +954,12 @@
         letter-spacing: 0.06em;
         padding: 2px 8px;
         border-radius: 20px;
+        z-index: 2;
+      }
+      .ba-btn,
+      .ba-divider,
+      .contact-map {
+        position: relative;
       }
       .ba-before .ba-label {
         left: 8px;
@@ -1131,11 +1114,10 @@
         color: rgba(255, 255, 255, 0.7);
         font-size: 12px;
         font-weight: 600;
+        text-decoration: none;
         transition: background var(--t);
       }
-      .btn-outline-w:hover,
-      .footer-divider,
-      .social-btn {
+      .btn-outline-w:hover {
         background: rgba(255, 255, 255, 0.08);
       }
       .btn-outline-w svg {
@@ -1241,6 +1223,10 @@
         line-height: 1.85;
         border: 1px solid var(--line);
       }
+      .footer-divider,
+      .social-btn {
+        background: rgba(255, 255, 255, 0.08);
+      }
       .nap-box strong {
         color: var(--ink);
         font-size: 14px;
@@ -1249,6 +1235,7 @@
       }
       .nap-box a {
         color: var(--blue);
+        text-decoration: none;
         font-weight: 600;
       }
       footer {
@@ -1309,6 +1296,7 @@
       .footer-nav-title {
         font-size: 10px;
         font-weight: 700;
+        text-transform: uppercase;
         letter-spacing: 0.1em;
         margin-bottom: 10px;
       }
@@ -1320,6 +1308,7 @@
       .footer-nav-links a {
         font-size: 13px;
         color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
         transition: color var(--t);
         display: inline-block;
         padding: 4px 0;
@@ -1350,7 +1339,9 @@
         border-radius: 50px;
         font-weight: 700;
         font-size: 12px;
+        text-decoration: none;
         box-shadow: 0 8px 32px rgba(0, 30, 255, 0.45);
+        font-family: Outfit, sans-serif;
       }
       .reveal {
         opacity: 0;
