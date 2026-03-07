@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Myjnia Samochodowa Białystok – Bubble Clean | Mycie, Odkurzanie, Pranie
-      Tapicerki
-    </title>
+    <title>Myjnia Samochodowa Białystok – Bubble Clean</title>
     <meta
       name="description"
-      content="Profesjonalna myjnia samochodowa w Białymstoku. Mycie, odkurzanie, pranie tapicerki, detailing i konserwacja. Szybko, dokładnie i bez ukrytych kosztów."
+      content="Profesjonalna auto myjnia w Białymstoku. Mycie, odkurzanie, pranie tapicerki, detailing i konserwacja. Szybko, dokładnie i bez ukrytych kosztów."
     />
     <meta name="robots" content="index, follow" />
     <meta
@@ -30,7 +27,6 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#001EFF" />
     <link rel="canonical" href="https://bubbleclean.pl/" />
-    <link rel="preload" as="image" href="images/hero.webp" type="image/webp" />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -345,7 +341,7 @@
       .hero-badge span {
         font-size: 10px;
         font-weight: 600;
-        color: #6690ff;
+        color: #99b3ff;
         letter-spacing: 0.08em;
         text-transform: uppercase;
       }
@@ -356,26 +352,6 @@
         border-radius: 50%;
         background: #001eff;
         animation: pulse 2s infinite;
-      }
-      .hero-img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: blur(20px);
-        transform: scale(1.1);
-        transition:
-          filter 0.6s ease,
-          opacity 0.6s ease,
-          transform 0.6s ease;
-        opacity: 0.6;
-      }
-
-      .hero-img.loaded {
-        filter: blur(0);
-        transform: scale(1);
-        opacity: 1;
       }
       @keyframes pulse {
         0%,
@@ -474,7 +450,7 @@
       }
       .stat-label {
         font-size: 10px;
-        color: rgba(255, 255, 255, 0.4);
+        color: rgba(255, 255, 255, 0.75);
         letter-spacing: 0.04em;
         line-height: 1.4;
       }
@@ -1283,7 +1259,7 @@
       }
       .footer-brand-sub {
         font-size: 12px;
-        color: rgba(255, 255, 255, 0.35);
+        color: rgba(255, 255, 255, 0.65);
         margin-bottom: 16px;
       }
       .footer-socials {
@@ -1316,7 +1292,7 @@
       .footer-nav-title {
         font-size: 10px;
         font-weight: 700;
-        color: rgba(255, 255, 255, 0.35);
+        color: rgba(255, 255, 255, 0.65);
         text-transform: uppercase;
         letter-spacing: 0.1em;
         margin-bottom: 10px;
@@ -1328,9 +1304,13 @@
       }
       .footer-nav-links a {
         font-size: 13px;
-        color: rgba(255, 255, 255, 0.55);
+        color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
         transition: color var(--t);
+        display: inline-block;
+        padding: 4px 0;
+        min-height: 44px;
+        line-height: 44px;
       }
       .footer-nav-links a:hover {
         color: #fff;
@@ -1342,7 +1322,7 @@
       }
       .footer-copy {
         font-size: 11px;
-        color: rgba(255, 255, 255, 0.25);
+        color: rgba(255, 255, 255, 0.65);
       }
 
       /* FLOATING CTA */
@@ -1513,10 +1493,10 @@
               <span>Białystok · Pon–Sob 8:00–20:00</span>
             </div>
             <h1 class="hero-title">
-              Profesjonalna<br />myjnia <em>samochodowa</em><br />w Białymstoku
+              Profesjonalna<br />auto <em>myjnia</em><br />w Białymstoku
             </h1>
             <p class="hero-desc">
-              Dbamy o każdy detal Twojego auta — szybko, dokładnie i bez
+              Dbamy o każdy detal Twojego auta. Szybko, dokładnie i bez
               kompromisów. Mycie, odkurzanie, pranie tapicerki i konserwacja w
               jednym miejscu.
             </p>
@@ -1581,10 +1561,8 @@
           </svg>
           <!-- ABY DODAĆ ZDJĘCIE: usuń svg i span, odkomentuj img poniżej -->
           <img
-            src="images/hero-blur.webp"
-            data-src="images/hero.webp"
+            src="images/hero.webp"
             alt="Profesjonalna myjnia samochodowa Bubble Clean Białystok"
-            class="hero-img lazy-blur"
             style="
               position: absolute;
               inset: 0;
@@ -1597,801 +1575,804 @@
       </div>
     </section>
 
-    <!-- OFERTA -->
-    <section id="oferta">
-      <div class="section-wrap">
-        <div class="section-label reveal">
-          <div class="label-bar"></div>
-          <span class="label-text">Oferta</span>
+    <main>
+      <!-- OFERTA -->
+      <section id="oferta">
+        <div class="section-wrap">
+          <div class="section-label reveal">
+            <div class="label-bar"></div>
+            <span class="label-text">Oferta</span>
+          </div>
+          <h2 class="reveal">Co dla Ciebie robimy</h2>
+          <div class="services-grid">
+            <div class="service-card reveal" onclick="toggleService(this)">
+              <div class="service-head">
+                <div
+                  class="service-icon"
+                  style="
+                    font-size: 15px;
+                    font-weight: 900;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                    font-family: &quot;Outfit&quot;, sans-serif;
+                  "
+                >
+                  I
+                </div>
+                <div class="service-info">
+                  <div class="service-name">Mycie samochodu (Białystok)</div>
+                  <span class="service-time">ok. 30 min</span>
+                </div>
+                <div class="service-toggle">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="service-body">
+                <p>
+                  Zewnętrzne mycie nadwozia, szyb i felg. Usuwamy brud, sól
+                  drogową i resztki owadów. Auto wychodzi z myjni suche i
+                  czyste.
+                </p>
+              </div>
+            </div>
+            <div class="service-card reveal" onclick="toggleService(this)">
+              <div class="service-head">
+                <div
+                  class="service-icon"
+                  style="
+                    font-size: 15px;
+                    font-weight: 900;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                    font-family: &quot;Outfit&quot;, sans-serif;
+                  "
+                >
+                  II
+                </div>
+                <div class="service-info">
+                  <div class="service-name">Odkurzanie</div>
+                  <span class="service-time">ok. 45 min</span>
+                </div>
+                <div class="service-toggle">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="service-body">
+                <p>
+                  Dokładne odkurzanie wnętrza: dywaniki, tapicerka, bagażnik i
+                  trudno dostępne zakamarki. Żadnych okruchów, żadnego kurzu.
+                </p>
+              </div>
+            </div>
+            <div class="service-card reveal" onclick="toggleService(this)">
+              <div class="service-head">
+                <div
+                  class="service-icon"
+                  style="
+                    font-size: 15px;
+                    font-weight: 900;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                    font-family: &quot;Outfit&quot;, sans-serif;
+                  "
+                >
+                  III
+                </div>
+                <div class="service-info">
+                  <div class="service-name">Pranie tapicerki</div>
+                  <span class="service-time">ok. 2–3 godz.</span>
+                </div>
+                <div class="service-toggle">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="service-body">
+                <p>
+                  Pranie tapicerki, foteli i dywaników na mokro. Usuwamy głęboko
+                  wchłonięte zabrudzenia, plamy i nieprzyjemne zapachy.
+                </p>
+              </div>
+            </div>
+            <div class="service-card reveal" onclick="toggleService(this)">
+              <div class="service-head">
+                <div
+                  class="service-icon"
+                  style="
+                    font-size: 15px;
+                    font-weight: 900;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                    font-family: &quot;Outfit&quot;, sans-serif;
+                  "
+                >
+                  IV
+                </div>
+                <div class="service-info">
+                  <div class="service-name">Konserwacja i odświeżanie</div>
+                  <span class="service-time">ok. 1–2 godz.</span>
+                </div>
+                <div class="service-toggle">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="service-body">
+                <p>
+                  Zabezpieczenie lakieru, plastików i uszczelek. Odświeżamy
+                  wnętrze i zewnętrze tak, żeby auto wyglądało jak nowe jak
+                  najdłużej.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-lg reveal">
+            <a href="#cennik" class="btn-primary">Sprawdź nasze ceny →</a>
+          </div>
         </div>
-        <h2 class="reveal">Co dla Ciebie robimy</h2>
-        <div class="services-grid">
-          <div class="service-card reveal" onclick="toggleService(this)">
-            <div class="service-head">
-              <div
-                class="service-icon"
-                style="
-                  font-size: 15px;
-                  font-weight: 900;
-                  letter-spacing: 0.05em;
-                  color: #fff;
-                  font-family: &quot;Outfit&quot;, sans-serif;
-                "
-              >
-                I
-              </div>
-              <div class="service-info">
-                <div class="service-name">Mycie samochodu (Białystok)</div>
-                <span class="service-time">ok. 30 min</span>
-              </div>
-              <div class="service-toggle">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div class="service-body">
-              <p>
-                Zewnętrzne mycie nadwozia, szyb i felg. Usuwamy brud, sól
-                drogową i resztki owadów. Auto wychodzi z myjni suche i czyste.
-              </p>
-            </div>
-          </div>
-          <div class="service-card reveal" onclick="toggleService(this)">
-            <div class="service-head">
-              <div
-                class="service-icon"
-                style="
-                  font-size: 15px;
-                  font-weight: 900;
-                  letter-spacing: 0.05em;
-                  color: #fff;
-                  font-family: &quot;Outfit&quot;, sans-serif;
-                "
-              >
-                II
-              </div>
-              <div class="service-info">
-                <div class="service-name">Odkurzanie</div>
-                <span class="service-time">ok. 45 min</span>
-              </div>
-              <div class="service-toggle">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div class="service-body">
-              <p>
-                Dokładne odkurzanie wnętrza: dywaniki, tapicerka, bagażnik i
-                trudno dostępne zakamarki. Żadnych okruchów, żadnego kurzu.
-              </p>
-            </div>
-          </div>
-          <div class="service-card reveal" onclick="toggleService(this)">
-            <div class="service-head">
-              <div
-                class="service-icon"
-                style="
-                  font-size: 15px;
-                  font-weight: 900;
-                  letter-spacing: 0.05em;
-                  color: #fff;
-                  font-family: &quot;Outfit&quot;, sans-serif;
-                "
-              >
-                III
-              </div>
-              <div class="service-info">
-                <div class="service-name">Pranie tapicerki</div>
-                <span class="service-time">ok. 2–3 godz.</span>
-              </div>
-              <div class="service-toggle">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div class="service-body">
-              <p>
-                Pranie tapicerki, foteli i dywaników na mokro. Usuwamy głęboko
-                wchłonięte zabrudzenia, plamy i nieprzyjemne zapachy.
-              </p>
-            </div>
-          </div>
-          <div class="service-card reveal" onclick="toggleService(this)">
-            <div class="service-head">
-              <div
-                class="service-icon"
-                style="
-                  font-size: 15px;
-                  font-weight: 900;
-                  letter-spacing: 0.05em;
-                  color: #fff;
-                  font-family: &quot;Outfit&quot;, sans-serif;
-                "
-              >
-                IV
-              </div>
-              <div class="service-info">
-                <div class="service-name">Konserwacja i odświeżanie</div>
-                <span class="service-time">ok. 1–2 godz.</span>
-              </div>
-              <div class="service-toggle">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div class="service-body">
-              <p>
-                Zabezpieczenie lakieru, plastików i uszczelek. Odświeżamy
-                wnętrze i zewnętrze tak, żeby auto wyglądało jak nowe jak
-                najdłużej.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-lg reveal">
-          <a href="#cennik" class="btn-primary">Sprawdź nasze ceny →</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CENNIK -->
-    <section id="cennik">
-      <div class="section-wrap">
-        <div class="section-label reveal">
-          <div class="label-bar"></div>
-          <span class="label-text light">Cennik</span>
-        </div>
-        <h2 style="color: #fff" class="reveal">Wybierz pakiet dla siebie</h2>
-        <p
-          style="
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.45);
-            margin-top: 10px;
-          "
-          class="reveal"
-        >
-          Cena zależy od typu pojazdu. Wybierz poniżej.
-        </p>
-        <div class="cennik-toggle mt-lg reveal" id="carToggle">
-          <button
-            class="toggle-btn active"
-            onclick="setCarType('osobowe', this)"
+      <!-- CENNIK -->
+      <section id="cennik">
+        <div class="section-wrap">
+          <div class="section-label reveal">
+            <div class="label-bar"></div>
+            <span class="label-text light">Cennik</span>
+          </div>
+          <h2 style="color: #fff" class="reveal">Wybierz pakiet dla siebie</h2>
+          <p
+            style="
+              font-size: 14px;
+              color: rgba(255, 255, 255, 0.45);
+              margin-top: 10px;
+            "
+            class="reveal"
           >
-            Osobowe
-          </button>
-          <button class="toggle-btn inactive" onclick="setCarType('suv', this)">
-            SUV / Bus
-          </button>
-        </div>
-        <div class="packages-grid reveal">
-          <div class="pkg-card">
-            <div class="pkg-name">SZYBKIE</div>
-            <div class="pkg-price" id="price-szybkie">
-              100 zł <span>/ jednorazowo</span>
-            </div>
-            <div class="pkg-suv" id="suv-szybkie" style="display: none">
-              SUV/Bus: 150 zł
-            </div>
-            <div class="pkg-divider"></div>
-            <div class="pkg-list">
-              <div class="pkg-item">Odkurzanie</div>
-              <div class="pkg-item">Mycie szyb od środka</div>
-              <div class="pkg-item">Czyszczenie plastików i wycieraczek</div>
-            </div>
-            <div class="pkg-cta">
-              <a
-                href="tel:+48667669253"
-                class="btn-primary"
-                style="font-size: 12px; padding: 10px 16px"
-                >Umów się →</a
-              >
-            </div>
-          </div>
-          <div class="pkg-card popular">
-            <div class="pkg-badge">NAJPOPULARNIEJSZY</div>
-            <div class="pkg-name">STANDARD</div>
-            <div class="pkg-price" id="price-standard">
-              250 zł <span>/ jednorazowo</span>
-            </div>
-            <div class="pkg-suv" id="suv-standard" style="display: none">
-              SUV/Bus: 300 zł
-            </div>
-            <div class="pkg-divider"></div>
-            <div class="pkg-list">
-              <div class="pkg-item">Dokładne odkurzanie</div>
-              <div class="pkg-item">Mycie szyb i szklanych elementów</div>
-              <div class="pkg-item">Czyszczenie kokpitu i wycieraczek</div>
-              <div class="pkg-item">Odświeżanie wnętrza</div>
-              <div class="pkg-subcat">Tapicerka</div>
-              <div class="pkg-item">Tapicerka materiałowa</div>
-              <div class="pkg-item">Bonnetowanie tapicerki</div>
-              <div class="pkg-item">Czyszczenie foteli skórzanych</div>
-            </div>
-            <div class="pkg-cta">
-              <a
-                href="tel:+48667669253"
-                class="btn-primary"
-                style="font-size: 12px; padding: 10px 16px"
-                >Umów się →</a
-              >
-            </div>
-          </div>
-          <div class="pkg-card">
-            <div class="pkg-name">PREMIUM</div>
-            <div class="pkg-price" id="price-premium">
-              500 zł <span>/ jednorazowo</span>
-            </div>
-            <div class="pkg-suv" id="suv-premium" style="display: none">
-              SUV/Bus: 600 zł
-            </div>
-            <div class="pkg-divider"></div>
-            <div class="pkg-list">
-              <div class="pkg-item">Dokładne odkurzanie</div>
-              <div class="pkg-item">Mycie szyb i szklanych elementów</div>
-              <div class="pkg-item">Czyszczenie kokpitu, kratek, nawiewu</div>
-              <div class="pkg-item">Czyszczenie progów, wnęk drzwi</div>
-              <div class="pkg-item">Neutralizacja zapachów</div>
-              <div class="pkg-subcat">Pranie tapicerskie</div>
-              <div class="pkg-item">Fotele i kanapa</div>
-              <div class="pkg-item">Boczki drzwi</div>
-              <div class="pkg-item">Dywaniki i wykładzina</div>
-              <div class="pkg-subcat">Konserwacja skór</div>
-              <div class="pkg-item">Czyszczenie tapicerki skórzanej</div>
-              <div class="pkg-item">Konserwacja elementów skórzanych</div>
-            </div>
-            <div class="pkg-cta">
-              <a
-                href="tel:+48667669253"
-                class="btn-primary"
-                style="font-size: 12px; padding: 10px 16px"
-                >Umów się →</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="extras-box reveal">
-          <div class="extras-title">Usługi dodatkowe</div>
-          <div class="extra-row">
-            <span class="extra-name">Mycie felg</span
-            ><span class="extra-price">50 zł</span>
-          </div>
-          <div class="extra-row">
-            <span class="extra-name">Szybki wosk</span
-            ><span class="extra-price">100 zł</span>
-          </div>
-          <div class="extra-row">
-            <span class="extra-name">Niewidzialna wycieraczka</span
-            ><span class="extra-price">100 zł</span>
-          </div>
-          <p class="extras-note">
-            * Usługi dodatkowe wymagają uprzedniego umycia auta na zewnątrz.
+            Cena zależy od typu pojazdu. Wybierz poniżej.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- O NAS -->
-    <section id="o-nas">
-      <div class="section-wrap">
-        <div class="section-label reveal">
-          <div class="label-bar"></div>
-          <span class="label-text">O nas</span>
-        </div>
-        <div class="about-grid">
-          <div>
-            <h2 class="reveal">Myjnia, której możesz zaufać</h2>
-            <p class="about-intro reveal">
-              Jesteśmy lokalną myjnią samochodową z Białegostoku. Myjemy
-              solidnie, na czas i bez ukrytych kosztów. Tyle obiecujemy i tyle
-              dostarczamy.
-            </p>
-            <div class="about-cards reveal">
-              <div class="about-card">
-                <div class="about-card-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-                    />
-                  </svg>
-                </div>
-                <h3>Historia</h3>
-                <p>
-                  Działamy od 2015 roku. Przez 10 lat umyliśmy setki samochodów.
-                </p>
+          <div class="cennik-toggle mt-lg reveal" id="carToggle">
+            <button
+              class="toggle-btn active"
+              onclick="setCarType('osobowe', this)"
+            >
+              Osobowe
+            </button>
+            <button
+              class="toggle-btn inactive"
+              onclick="setCarType('suv', this)"
+            >
+              SUV / Bus
+            </button>
+          </div>
+          <div class="packages-grid reveal">
+            <div class="pkg-card">
+              <div class="pkg-name">SZYBKIE</div>
+              <div class="pkg-price" id="price-szybkie">
+                100 zł <span>/ jednorazowo</span>
               </div>
-              <div class="about-card">
-                <div class="about-card-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                    />
-                  </svg>
-                </div>
-                <h3>Perfekcyjność</h3>
-                <p>
-                  Każdy krok robimy dokładnie. Auto odbierasz czyste w każdym
-                  rogu.
-                </p>
+              <div class="pkg-suv" id="suv-szybkie" style="display: none">
+                SUV/Bus: 150 zł
               </div>
-              <div class="about-card">
-                <div class="about-card-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"
-                    />
-                  </svg>
-                </div>
-                <h3>Rzetelność</h3>
-                <p>
-                  Żadnych niespodzianek na koniec. Robimy robotę i oddajemy auto
-                  na czas.
-                </p>
+              <div class="pkg-divider"></div>
+              <div class="pkg-list">
+                <div class="pkg-item">Odkurzanie</div>
+                <div class="pkg-item">Mycie szyb od środka</div>
+                <div class="pkg-item">Czyszczenie plastików i wycieraczek</div>
               </div>
-              <div class="about-card">
-                <div class="about-card-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
-                    />
-                  </svg>
-                </div>
-                <h3>Sumienność</h3>
-                <p>
-                  Małe auto czy duży SUV podchodzimy do każdego tak samo
-                  starannie.
-                </p>
+              <div class="pkg-cta">
+                <a
+                  href="tel:+48667669253"
+                  class="btn-primary"
+                  style="font-size: 12px; padding: 10px 16px"
+                  >Umów się →</a
+                >
+              </div>
+            </div>
+            <div class="pkg-card popular">
+              <div class="pkg-badge">NAJPOPULARNIEJSZY</div>
+              <div class="pkg-name">STANDARD</div>
+              <div class="pkg-price" id="price-standard">
+                250 zł <span>/ jednorazowo</span>
+              </div>
+              <div class="pkg-suv" id="suv-standard" style="display: none">
+                SUV/Bus: 300 zł
+              </div>
+              <div class="pkg-divider"></div>
+              <div class="pkg-list">
+                <div class="pkg-item">Dokładne odkurzanie</div>
+                <div class="pkg-item">Mycie szyb i szklanych elementów</div>
+                <div class="pkg-item">Czyszczenie kokpitu i wycieraczek</div>
+                <div class="pkg-item">Odświeżanie wnętrza</div>
+                <div class="pkg-subcat">Tapicerka</div>
+                <div class="pkg-item">Tapicerka materiałowa</div>
+                <div class="pkg-item">Bonnetowanie tapicerki</div>
+                <div class="pkg-item">Czyszczenie foteli skórzanych</div>
+              </div>
+              <div class="pkg-cta">
+                <a
+                  href="tel:+48667669253"
+                  class="btn-primary"
+                  style="font-size: 12px; padding: 10px 16px"
+                  >Umów się →</a
+                >
+              </div>
+            </div>
+            <div class="pkg-card">
+              <div class="pkg-name">PREMIUM</div>
+              <div class="pkg-price" id="price-premium">
+                500 zł <span>/ jednorazowo</span>
+              </div>
+              <div class="pkg-suv" id="suv-premium" style="display: none">
+                SUV/Bus: 600 zł
+              </div>
+              <div class="pkg-divider"></div>
+              <div class="pkg-list">
+                <div class="pkg-item">Dokładne odkurzanie</div>
+                <div class="pkg-item">Mycie szyb i szklanych elementów</div>
+                <div class="pkg-item">Czyszczenie kokpitu, kratek, nawiewu</div>
+                <div class="pkg-item">Czyszczenie progów, wnęk drzwi</div>
+                <div class="pkg-item">Neutralizacja zapachów</div>
+                <div class="pkg-subcat">Pranie tapicerskie</div>
+                <div class="pkg-item">Fotele i kanapa</div>
+                <div class="pkg-item">Boczki drzwi</div>
+                <div class="pkg-item">Dywaniki i wykładzina</div>
+                <div class="pkg-subcat">Konserwacja skór</div>
+                <div class="pkg-item">Czyszczenie tapicerki skórzanej</div>
+                <div class="pkg-item">Konserwacja elementów skórzanych</div>
+              </div>
+              <div class="pkg-cta">
+                <a
+                  href="tel:+48667669253"
+                  class="btn-primary"
+                  style="font-size: 12px; padding: 10px 16px"
+                  >Umów się →</a
+                >
               </div>
             </div>
           </div>
-          <div class="about-photo reveal">
-            <img
-              src="images/about.webp"
-              alt="Wnętrze myjni samochodowej Bubble Clean Białystok"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALERIA -->
-    <section id="galeria">
-      <div class="section-wrap">
-        <div class="section-label reveal">
-          <div class="label-bar"></div>
-          <span class="label-text">Galeria</span>
-        </div>
-        <h2 class="reveal">Realizacje w obiektywie</h2>
-        <div class="gallery-grid">
-          <div class="ba-card reveal">
-            <div class="ba-images">
-              <div class="ba-before">
-                <img
-                  src="images/gallery-sedan-przed.webp"
-                  alt="Przed myciem nadwozia sedana"
-                />
-                <div class="ba-label">PRZED</div>
-              </div>
-              <div class="ba-divider">
-                <div class="ba-btn">
-                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                </div>
-              </div>
-              <div class="ba-after">
-                <img
-                  src="images/gallery-sedan-po.webp"
-                  alt="Po myciu nadwozia sedana"
-                />
-                <div class="ba-label">PO</div>
-              </div>
+          <div class="extras-box reveal">
+            <div class="extras-title">Usługi dodatkowe</div>
+            <div class="extra-row">
+              <span class="extra-name">Mycie felg</span
+              ><span class="extra-price">50 zł</span>
             </div>
-            <div class="ba-footer"><span>Mycie nadwozia — sedan</span></div>
-          </div>
-          <div class="ba-card reveal">
-            <div class="ba-images">
-              <div class="ba-before">
-                <img
-                  src="images/gallery-tapicerka-przed.webp"
-                  alt="Przed praniem tapicerki SUV"
-                />
-                <div class="ba-label">PRZED</div>
-              </div>
-              <div class="ba-divider">
-                <div class="ba-btn">
-                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                </div>
-              </div>
-              <div class="ba-after">
-                <img
-                  src="images/gallery-tapicerka-po.webp"
-                  alt="Po praniu tapicerki SUV"
-                />
-                <div class="ba-label">PO</div>
-              </div>
+            <div class="extra-row">
+              <span class="extra-name">Szybki wosk</span
+              ><span class="extra-price">100 zł</span>
             </div>
-            <div class="ba-footer"><span>Pranie tapicerki — SUV</span></div>
-          </div>
-          <div class="ba-card reveal">
-            <div class="ba-images">
-              <div class="ba-before">
-                <img
-                  src="images/gallery-felgi-przed.webp"
-                  alt="Przed czyszczeniem felg"
-                />
-                <div class="ba-label">PRZED</div>
-              </div>
-              <div class="ba-divider">
-                <div class="ba-btn">
-                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                </div>
-              </div>
-              <div class="ba-after">
-                <img
-                  src="images/gallery-felgi-po.webp"
-                  alt="Po czyszczeniu felg"
-                />
-                <div class="ba-label">PO</div>
-              </div>
+            <div class="extra-row">
+              <span class="extra-name">Niewidzialna wycieraczka</span
+              ><span class="extra-price">100 zł</span>
             </div>
-            <div class="ba-footer"><span>Czyszczenie drzwi</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OPINIE -->
-    <section id="opinie">
-      <div class="section-wrap">
-        <div class="section-label reveal">
-          <div class="label-bar"></div>
-          <span class="label-text light">Opinie klientów</span>
-        </div>
-        <h2 style="color: #fff" class="reveal">Co mówią klienci</h2>
-        <div class="reviews-header reveal">
-          <div class="reviews-score">4.9</div>
-          <div>
-            <div class="reviews-stars">
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-            </div>
-            <div class="reviews-count">Oparte na opiniach klientów Google</div>
-          </div>
-        </div>
-        <div class="reviews-grid">
-          <div class="review-card reveal">
-            <div class="review-top">
-              <div class="review-avatar">A</div>
-              <div>
-                <div class="review-name">Anna K.</div>
-                <div class="review-date">2 tygodnie temu</div>
-              </div>
-            </div>
-            <div class="rev-stars">
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-            </div>
-            <p class="review-text">
-              Fantastyczna robota! Auto wygląda jak nowe. Pranie tapicerki
-              przeszło moje oczekiwania — zapachy zniknęły całkowicie. Na pewno
-              wrócę.
-            </p>
-          </div>
-          <div class="review-card reveal">
-            <div class="review-top">
-              <div class="review-avatar">M</div>
-              <div>
-                <div class="review-name">Marek W.</div>
-                <div class="review-date">1 miesiąc temu</div>
-              </div>
-            </div>
-            <div class="rev-stars">
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-            </div>
-            <p class="review-text">
-              Bardzo solidna myjnia. Pakiet Standard — świetny stosunek ceny do
-              jakości. Kokpit błyszczy, szyby idealnie czyste. Polecam!
-            </p>
-          </div>
-          <div class="review-card reveal">
-            <div class="review-top">
-              <div class="review-avatar">K</div>
-              <div>
-                <div class="review-name">Katarzyna S.</div>
-                <div class="review-date">3 tygodnie temu</div>
-              </div>
-            </div>
-            <div class="rev-stars">
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-            </div>
-            <p class="review-text">
-              Profesjonalna obsługa, punktualność i efekt końcowy — bez
-              zastrzeżeń. SUV wyglądał jak wyjęty z salonu. 100% polecam Bubble
-              Clean!
-            </p>
-          </div>
-          <div class="review-card reveal">
-            <div class="review-top">
-              <div class="review-avatar">P</div>
-              <div>
-                <div class="review-name">Piotr N.</div>
-                <div class="review-date">2 miesiące temu</div>
-              </div>
-            </div>
-            <div class="rev-stars">
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-              <div class="review-star"></div>
-            </div>
-            <p class="review-text">
-              Korzystałem z wielu myjni, ale tutaj poziom jest zdecydowanie
-              najwyższy. Dbałość o detale naprawdę robi różnicę.
+            <p class="extras-note">
+              * Usługi dodatkowe wymagają uprzedniego umycia auta na zewnątrz.
             </p>
           </div>
         </div>
-        <div
-          style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px"
-          class="reveal"
-        >
-          <a
-            href="https://www.google.com/maps/place/Bubble+Clean/@53.1079105,23.1139523,17z/data=!4m18!1m9!3m8!1s0x471ffb1fe3b1fe91:0xdf0538baad059529!2sBubble+Clean!8m2!3d53.1078802!4d23.1138954!9m1!1b1!16s%2Fg%2F11yry9f5pc!3m7!1s0x471ffb1fe3b1fe91:0xdf0538baad059529!8m2!3d53.1078802!4d23.1138954!9m1!1b1!16s%2Fg%2F11yry9f5pc?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            class="btn-outline-w"
-            ><svg viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
-              /></svg
-            >Opinie Google</a
-          >
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ -->
-    <section id="faq">
-      <div class="section-wrap">
-        <div class="section-label reveal">
-          <div class="label-bar"></div>
-          <span class="label-text">FAQ</span>
-        </div>
-        <h2 class="reveal">Najczęściej zadawane pytania</h2>
-        <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
-          <div
-            class="faq-item open reveal"
-            itemscope
-            itemprop="mainEntity"
-            itemtype="https://schema.org/Question"
-          >
-            <div class="faq-q" onclick="toggleFaq(this.parentElement)">
-              <h3 itemprop="name">Ile trwa mycie samochodu?</h3>
-              <div class="faq-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
+      <!-- O NAS -->
+      <section id="o-nas">
+        <div class="section-wrap">
+          <div class="section-label reveal">
+            <div class="label-bar"></div>
+            <span class="label-text">O nas</span>
+          </div>
+          <div class="about-grid">
+            <div>
+              <h2 class="reveal">Myjnia, której możesz zaufać</h2>
+              <p class="about-intro reveal">
+                Jesteśmy lokalną myjnią samochodową z Białegostoku. Myjemy
+                solidnie, na czas i bez ukrytych kosztów. Tyle obiecujemy i tyle
+                dostarczamy.
+              </p>
+              <div class="about-cards reveal">
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Historia</h3>
+                  <p>
+                    Działamy od 2015 roku. Przez 10 lat umyliśmy setki
+                    samochodów.
+                  </p>
+                </div>
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Perfekcyjność</h3>
+                  <p>
+                    Każdy krok robimy dokładnie. Auto odbierasz czyste w każdym
+                    rogu.
+                  </p>
+                </div>
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Rzetelność</h3>
+                  <p>
+                    Żadnych niespodzianek na koniec. Robimy robotę i oddajemy
+                    auto na czas.
+                  </p>
+                </div>
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Sumienność</h3>
+                  <p>
+                    Małe auto czy duży SUV — podchodzimy do każdego tak samo
+                    starannie.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="faq-a"
-              style="display: block"
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="https://schema.org/Answer"
-            >
-              <p itemprop="text">
-                Mycie zewnętrzne trwa ok. 30 minut. Pakiet Standard zajmuje
-                1,5–2 godz., a Premium nawet 4–5 godzin w zależności od stanu
-                pojazdu.
-              </p>
-            </div>
-          </div>
-          <div
-            class="faq-item reveal"
-            itemscope
-            itemprop="mainEntity"
-            itemtype="https://schema.org/Question"
-          >
-            <div class="faq-q" onclick="toggleFaq(this.parentElement)">
-              <h3 itemprop="name">Czy trzeba rezerwować wizytę?</h3>
-              <div class="faq-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div
-              class="faq-a"
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="https://schema.org/Answer"
-            >
-              <p itemprop="text">
-                Zalecamy rezerwację telefonicznie lub przez formularz. W
-                niektóre dni przyjmujemy też klientów z ulicy, ale nie
-                gwarantujemy wolnego miejsca.
-              </p>
-            </div>
-          </div>
-          <div
-            class="faq-item reveal"
-            itemscope
-            itemprop="mainEntity"
-            itemtype="https://schema.org/Question"
-          >
-            <div class="faq-q" onclick="toggleFaq(this.parentElement)">
-              <h3 itemprop="name">Czy można płacić kartą?</h3>
-              <div class="faq-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div
-              class="faq-a"
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="https://schema.org/Answer"
-            >
-              <p itemprop="text">
-                Tak, akceptujemy płatności kartą, BLIK oraz gotówką. Faktura VAT
-                na życzenie.
-              </p>
-            </div>
-          </div>
-          <div
-            class="faq-item reveal"
-            itemscope
-            itemprop="mainEntity"
-            itemtype="https://schema.org/Question"
-          >
-            <div class="faq-q" onclick="toggleFaq(this.parentElement)">
-              <h3 itemprop="name">Jakie auta obsługujecie?</h3>
-              <div class="faq-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div
-              class="faq-a"
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="https://schema.org/Answer"
-            >
-              <p itemprop="text">
-                Obsługujemy wszystkie typy pojazdów: osobowe, SUV-y, busy i
-                vany. Cena zależy od typu pojazdu i wybranego pakietu.
-              </p>
-            </div>
-          </div>
-          <div
-            class="faq-item reveal"
-            itemscope
-            itemprop="mainEntity"
-            itemtype="https://schema.org/Question"
-          >
-            <div class="faq-q" onclick="toggleFaq(this.parentElement)">
-              <h3 itemprop="name">Czy mycie jest bezpieczne dla lakieru?</h3>
-              <div class="faq-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div
-              class="faq-a"
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="https://schema.org/Answer"
-            >
-              <p itemprop="text">
-                Tak. Używamy wyłącznie środków dedykowanych do lakierów
-                samochodowych i ręcznych metod mycia, które nie rysują
-                powierzchni.
-              </p>
-            </div>
-          </div>
-          <div
-            class="faq-item reveal"
-            itemscope
-            itemprop="mainEntity"
-            itemtype="https://schema.org/Question"
-          >
-            <div class="faq-q" onclick="toggleFaq(this.parentElement)">
-              <h3 itemprop="name">Czy pranie tapicerki usuwa zapachy?</h3>
-              <div class="faq-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                </svg>
-              </div>
-            </div>
-            <div
-              class="faq-a"
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="https://schema.org/Answer"
-            >
-              <p itemprop="text">
-                W większości przypadków tak. Przy bardzo intensywnych zapachach
-                stosujemy dodatkową neutralizację, o czym informujemy przed
-                przystąpieniem do pracy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- KONTAKT -->
-    <section id="kontakt">
-      <div class="section-wrap">
-        <div class="section-label reveal">
-          <div class="label-bar"></div>
-          <span class="label-text">Kontakt</span>
-        </div>
-        <h2 class="reveal">Znajdź nas i napisz</h2>
-        <div class="contact-col">
-          <div class="contact-map reveal">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11813.473683587068!2d23.1138954!3d53.1078802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb1fe3b1fe91%3A0xdf0538baad059529!2sBubble%20Clean!5e0!3m2!1spl!2spl!4v1772699747778!5m2!1spl!2spl"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Lokalizacja Bubble Clean"
-            ></iframe>
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+            <div class="about-photo reveal">
+              <img
+                src="images/about.webp"
+                alt="Wnętrze myjni samochodowej Bubble Clean Białystok"
               />
-            </svg>
-            <span>Al. Jana Paderewskiego 6, Białystok</span>
-          </div>
-          <address class="nap-box reveal" style="font-style: normal">
-            <strong>Bubble Clean – Myjnia Samochodowa Białystok</strong>
-            Al. Jana Paderewskiego 6<br />
-            15-349 Białystok<br />
-            Tel: <a href="tel:+48667669253">+48 667 669 253</a><br />
-            Pon.–Sob. 8:00–20:00
-          </address>
-          <div class="contact-btn reveal">
-            <a
-              href="tel:+48667669253"
-              class="btn-primary"
-              style="width: 100%; justify-content: center"
-            >
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-                />
-              </svg>
-              Zadzwoń i umów termin
-            </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- GALERIA -->
+      <section id="galeria">
+        <div class="section-wrap">
+          <div class="section-label reveal">
+            <div class="label-bar"></div>
+            <span class="label-text">Galeria</span>
+          </div>
+          <h2 class="reveal">Realizacje w obiektywie</h2>
+          <div class="gallery-grid">
+            <div class="ba-card reveal">
+              <div class="ba-images">
+                <div class="ba-before">
+                  <img
+                    src="images/gallery-sedan-przed.webp"
+                    alt="Przed myciem nadwozia sedana"
+                  />
+                  <div class="ba-label">PRZED</div>
+                </div>
+                <div class="ba-divider">
+                  <div class="ba-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                  </div>
+                </div>
+                <div class="ba-after">
+                  <img
+                    src="images/gallery-sedan-po.webp"
+                    alt="Po myciu nadwozia sedana"
+                  />
+                  <div class="ba-label">PO</div>
+                </div>
+              </div>
+              <div class="ba-footer"><span>Mycie nadwozia — sedan</span></div>
+            </div>
+            <div class="ba-card reveal">
+              <div class="ba-images">
+                <div class="ba-before">
+                  <img
+                    src="images/gallery-tapicerka-przed.webp"
+                    alt="Przed praniem tapicerki SUV"
+                  />
+                  <div class="ba-label">PRZED</div>
+                </div>
+                <div class="ba-divider">
+                  <div class="ba-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                  </div>
+                </div>
+                <div class="ba-after">
+                  <img
+                    src="images/gallery-tapicerka-po.webp"
+                    alt="Po praniu tapicerki SUV"
+                  />
+                  <div class="ba-label">PO</div>
+                </div>
+              </div>
+              <div class="ba-footer"><span>Pranie tapicerki — SUV</span></div>
+            </div>
+            <div class="ba-card reveal">
+              <div class="ba-images">
+                <div class="ba-before">
+                  <img
+                    src="images/gallery-felgi-przed.webp"
+                    alt="Przed czyszczeniem felg"
+                  />
+                  <div class="ba-label">PRZED</div>
+                </div>
+                <div class="ba-divider">
+                  <div class="ba-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                  </div>
+                </div>
+                <div class="ba-after">
+                  <img
+                    src="images/gallery-felgi-po.webp"
+                    alt="Po czyszczeniu felg"
+                  />
+                  <div class="ba-label">PO</div>
+                </div>
+              </div>
+              <div class="ba-footer"><span>Czyszczenie felg</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OPINIE -->
+      <section id="opinie">
+        <div class="section-wrap">
+          <div class="section-label reveal">
+            <div class="label-bar"></div>
+            <span class="label-text light">Opinie klientów</span>
+          </div>
+          <h2 style="color: #fff" class="reveal">Co mówią klienci</h2>
+          <div class="reviews-header reveal">
+            <div class="reviews-score">5.0</div>
+            <div>
+              <div class="reviews-stars">
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+              </div>
+              <div class="reviews-count">
+                Oparte na opiniach klientów Google
+              </div>
+            </div>
+          </div>
+          <div class="reviews-grid">
+            <div class="review-card reveal">
+              <div class="review-top">
+                <div class="review-avatar">A</div>
+                <div>
+                  <div class="review-name">Anna K.</div>
+                  <div class="review-date">2 tygodnie temu</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+              </div>
+              <p class="review-text">
+                Fantastyczna robota! Auto wygląda jak nowe. Pranie tapicerki
+                przeszło moje oczekiwania — zapachy zniknęły całkowicie. Na
+                pewno wrócę.
+              </p>
+            </div>
+            <div class="review-card reveal">
+              <div class="review-top">
+                <div class="review-avatar">M</div>
+                <div>
+                  <div class="review-name">Marek W.</div>
+                  <div class="review-date">1 miesiąc temu</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+              </div>
+              <p class="review-text">
+                Bardzo solidna myjnia. Pakiet Standard — świetny stosunek ceny
+                do jakości. Kokpit błyszczy, szyby idealnie czyste. Polecam!
+              </p>
+            </div>
+            <div class="review-card reveal">
+              <div class="review-top">
+                <div class="review-avatar">K</div>
+                <div>
+                  <div class="review-name">Katarzyna S.</div>
+                  <div class="review-date">3 tygodnie temu</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+              </div>
+              <p class="review-text">
+                Profesjonalna obsługa, punktualność i efekt końcowy — bez
+                zastrzeżeń. SUV wyglądał jak wyjęty z salonu. 100% polecam
+                Bubble Clean!
+              </p>
+            </div>
+            <div class="review-card reveal">
+              <div class="review-top">
+                <div class="review-avatar">P</div>
+                <div>
+                  <div class="review-name">Piotr N.</div>
+                  <div class="review-date">2 miesiące temu</div>
+                </div>
+              </div>
+              <div class="rev-stars">
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+                <div class="review-star"></div>
+              </div>
+              <p class="review-text">
+                Korzystałem z wielu myjni, ale tutaj poziom jest zdecydowanie
+                najwyższy. Dbałość o detale naprawdę robi różnicę.
+              </p>
+            </div>
+          </div>
+          <div
+            style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px"
+            class="reveal"
+          >
+            <a
+              href="https://www.google.com/maps/place/Bubble+Clean/@53.10788,23.113895,13z/data=!4m8!3m7!1s0x471ffb1fe3b1fe91:0xdf0538baad059529!8m2!3d53.1078802!4d23.1138954!9m1!1b1!16s%2Fg%2F11yry9f5pc?hl=pl&entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="btn-outline-w"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                /></svg
+              >Opinie Google</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="section-wrap">
+          <div class="section-label reveal">
+            <div class="label-bar"></div>
+            <span class="label-text">FAQ</span>
+          </div>
+          <h2 class="reveal">Najczęściej zadawane pytania</h2>
+          <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+            <div
+              class="faq-item open reveal"
+              itemscope
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+            >
+              <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+                <h3 itemprop="name">Ile trwa mycie samochodu?</h3>
+                <div class="faq-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="faq-a"
+                style="display: block"
+                itemprop="acceptedAnswer"
+                itemscope
+                itemtype="https://schema.org/Answer"
+              >
+                <p itemprop="text">
+                  Mycie zewnętrzne trwa ok. 30 minut. Pakiet Standard zajmuje
+                  1,5–2 godz., a Premium nawet 4–5 godzin w zależności od stanu
+                  pojazdu.
+                </p>
+              </div>
+            </div>
+            <div
+              class="faq-item reveal"
+              itemscope
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+            >
+              <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+                <h3 itemprop="name">Czy trzeba rezerwować wizytę?</h3>
+                <div class="faq-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="faq-a"
+                itemprop="acceptedAnswer"
+                itemscope
+                itemtype="https://schema.org/Answer"
+              >
+                <p itemprop="text">
+                  Zalecamy rezerwację telefonicznie lub przez formularz. W
+                  niektóre dni przyjmujemy też klientów z ulicy, ale nie
+                  gwarantujemy wolnego miejsca.
+                </p>
+              </div>
+            </div>
+            <div
+              class="faq-item reveal"
+              itemscope
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+            >
+              <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+                <h3 itemprop="name">Czy można płacić kartą?</h3>
+                <div class="faq-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="faq-a"
+                itemprop="acceptedAnswer"
+                itemscope
+                itemtype="https://schema.org/Answer"
+              >
+                <p itemprop="text">
+                  Tak, akceptujemy płatności kartą, BLIK oraz gotówką. Faktura
+                  VAT na życzenie.
+                </p>
+              </div>
+            </div>
+            <div
+              class="faq-item reveal"
+              itemscope
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+            >
+              <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+                <h3 itemprop="name">Jakie auta obsługujecie?</h3>
+                <div class="faq-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="faq-a"
+                itemprop="acceptedAnswer"
+                itemscope
+                itemtype="https://schema.org/Answer"
+              >
+                <p itemprop="text">
+                  Obsługujemy wszystkie typy pojazdów: osobowe, SUV-y, busy i
+                  vany. Cena zależy od typu pojazdu i wybranego pakietu.
+                </p>
+              </div>
+            </div>
+            <div
+              class="faq-item reveal"
+              itemscope
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+            >
+              <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+                <h3 itemprop="name">Czy mycie jest bezpieczne dla lakieru?</h3>
+                <div class="faq-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="faq-a"
+                itemprop="acceptedAnswer"
+                itemscope
+                itemtype="https://schema.org/Answer"
+              >
+                <p itemprop="text">
+                  Tak. Używamy wyłącznie środków dedykowanych do lakierów
+                  samochodowych i ręcznych metod mycia, które nie rysują
+                  powierzchni.
+                </p>
+              </div>
+            </div>
+            <div
+              class="faq-item reveal"
+              itemscope
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+            >
+              <div class="faq-q" onclick="toggleFaq(this.parentElement)">
+                <h3 itemprop="name">Czy pranie tapicerki usuwa zapachy?</h3>
+                <div class="faq-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 13H13v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="faq-a"
+                itemprop="acceptedAnswer"
+                itemscope
+                itemtype="https://schema.org/Answer"
+              >
+                <p itemprop="text">
+                  W większości przypadków tak. Przy bardzo intensywnych
+                  zapachach stosujemy dodatkową neutralizację, o czym
+                  informujemy przed przystąpieniem do pracy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONTAKT -->
+      <section id="kontakt">
+        <div class="section-wrap">
+          <div class="section-label reveal">
+            <div class="label-bar"></div>
+            <span class="label-text">Kontakt</span>
+          </div>
+          <h2 class="reveal">Znajdź nas i napisz</h2>
+          <div class="contact-col">
+            <div class="contact-map reveal">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11813.473683587068!2d23.1138954!3d53.1078802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb1fe3b1fe91%3A0xdf0538baad059529!2sBubble%20Clean!5e0!3m2!1spl!2spl!4v1772699747778!5m2!1spl!2spl"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lokalizacja Bubble Clean"
+              ></iframe>
+            </div>
+            <address class="nap-box reveal" style="font-style: normal">
+              <strong>Bubble Clean – Myjnia Samochodowa w Białymstoku</strong>
+              Al. Jana Paderewskiego 6<br />
+              15-349 Białystok<br />
+              Tel: <a href="tel:+48667669253">+48 667 669 253</a><br />
+              Pon.– Sob. 8:00–20:00
+            </address>
+            <div class="contact-btn reveal">
+              <a
+                href="tel:+48667669253"
+                class="btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+                Zadzwoń i umów termin
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
@@ -2538,20 +2519,6 @@
       window.addEventListener("scroll", function () {
         document.getElementById("nav").style.background =
           window.scrollY > 40 ? "rgba(10,10,10,.98)" : "rgba(10,10,10,.94)";
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const img = document.querySelector(".hero-img");
-        const realSrc = img.dataset.src;
-
-        const newImg = new Image();
-        newImg.src = realSrc;
-
-        newImg.onload = function () {
-          img.src = realSrc;
-          img.classList.add("loaded");
-        };
       });
     </script>
   </body>
