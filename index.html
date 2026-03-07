@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Myjnia Samochodowa Białystok – Bubble Clean</title>
+    <title>
+      Myjnia Samochodowa Białystok – Bubble Clean | Mycie, Odkurzanie, Pranie
+      Tapicerki
+    </title>
     <meta
       name="description"
-      content="Profesjonalna auto myjnia w Białymstoku. Mycie, odkurzanie, pranie tapicerki, detailing i konserwacja. Szybko, dokładnie i bez ukrytych kosztów."
+      content="Profesjonalna myjnia samochodowa w Białymstoku. Mycie, odkurzanie, pranie tapicerki, detailing i konserwacja. Szybko, dokładnie i bez ukrytych kosztów."
     />
     <meta name="robots" content="index, follow" />
     <meta
@@ -27,6 +30,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#001EFF" />
     <link rel="canonical" href="https://bubbleclean.pl/" />
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero.webp"
+      fetchpriority="high"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -1496,7 +1507,7 @@
               Profesjonalna<br />auto <em>myjnia</em><br />w Białymstoku
             </h1>
             <p class="hero-desc">
-              Dbamy o każdy detal Twojego auta. Szybko, dokładnie i bez
+              Dbamy o każdy detal Twojego auta — szybko, dokładnie i bez
               kompromisów. Mycie, odkurzanie, pranie tapicerki i konserwacja w
               jednym miejscu.
             </p>
@@ -1559,9 +1570,10 @@
               d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"
             />
           </svg>
-          <!-- ABY DODAĆ ZDJĘCIE: usuń svg i span, odkomentuj img poniżej -->
           <img
             src="images/hero.webp"
+            srcset="images/hero-800.webp 800w, images/hero.webp 1600w"
+            sizes="(max-width:900px) 100vw, 46vw"
             alt="Profesjonalna myjnia samochodowa Bubble Clean Białystok"
             style="
               position: absolute;
@@ -1570,6 +1582,7 @@
               height: 100%;
               object-fit: cover;
             "
+            fetchpriority="high"
           />
         </div>
       </div>
@@ -1934,6 +1947,7 @@
             <div class="about-photo reveal">
               <img
                 src="images/about.webp"
+                loading="lazy"
                 alt="Wnętrze myjni samochodowej Bubble Clean Białystok"
               />
             </div>
@@ -1955,6 +1969,9 @@
                 <div class="ba-before">
                   <img
                     src="images/gallery-sedan-przed.webp"
+                    srcset="images/gallery-sedan-przed.webp 418w"
+                    sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw"
+                    loading="lazy"
                     alt="Przed myciem nadwozia sedana"
                   />
                   <div class="ba-label">PRZED</div>
@@ -1967,6 +1984,9 @@
                 <div class="ba-after">
                   <img
                     src="images/gallery-sedan-po.webp"
+                    srcset="images/gallery-sedan-po.webp 418w"
+                    sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw"
+                    loading="lazy"
                     alt="Po myciu nadwozia sedana"
                   />
                   <div class="ba-label">PO</div>
@@ -1979,6 +1999,9 @@
                 <div class="ba-before">
                   <img
                     src="images/gallery-tapicerka-przed.webp"
+                    srcset="images/gallery-tapicerka-przed.webp 418w"
+                    sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw"
+                    loading="lazy"
                     alt="Przed praniem tapicerki SUV"
                   />
                   <div class="ba-label">PRZED</div>
@@ -1991,6 +2014,9 @@
                 <div class="ba-after">
                   <img
                     src="images/gallery-tapicerka-po.webp"
+                    srcset="images/gallery-tapicerka-po.webp 418w"
+                    sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw"
+                    loading="lazy"
                     alt="Po praniu tapicerki SUV"
                   />
                   <div class="ba-label">PO</div>
@@ -2003,6 +2029,9 @@
                 <div class="ba-before">
                   <img
                     src="images/gallery-felgi-przed.webp"
+                    srcset="images/gallery-felgi-przed.webp 418w"
+                    sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw"
+                    loading="lazy"
                     alt="Przed czyszczeniem felg"
                   />
                   <div class="ba-label">PRZED</div>
@@ -2015,6 +2044,9 @@
                 <div class="ba-after">
                   <img
                     src="images/gallery-felgi-po.webp"
+                    srcset="images/gallery-felgi-po.webp 418w"
+                    sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw"
+                    loading="lazy"
                     alt="Po czyszczeniu felg"
                   />
                   <div class="ba-label">PO</div>
@@ -2342,13 +2374,19 @@
                 referrerpolicy="no-referrer-when-downgrade"
                 title="Lokalizacja Bubble Clean"
               ></iframe>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                />
+              </svg>
+              <span>Al. Jana Paderewskiego 6, Białystok</span>
             </div>
             <address class="nap-box reveal" style="font-style: normal">
-              <strong>Bubble Clean – Myjnia Samochodowa w Białymstoku</strong>
+              <strong>Bubble Clean – Myjnia Samochodowa</strong>
               Al. Jana Paderewskiego 6<br />
               15-349 Białystok<br />
               Tel: <a href="tel:+48667669253">+48 667 669 253</a><br />
-              Pon.– Sob. 8:00–20:00
+              Pon.–Sob. 8:00–20:00
             </address>
             <div class="contact-btn reveal">
               <a
